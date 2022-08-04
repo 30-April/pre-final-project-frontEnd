@@ -1,0 +1,35 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.labelPlaceholder {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: rgb(109, 109, 109);
+  text-transform: capitalize; 
+  transition: top .3s;
+  padding: 0;
+}
+
+.inputPlaceholder:focus + .labelPlaceholder,
+.inputPlaceholder:valid + .labelPlaceholder
+{
+  top: -10px;
+  background-color: #F7FAFC;
+  z-index: 100;
+  font-size: small;
+}
